@@ -1,7 +1,7 @@
 # aesCryptoCLI
 A command line interface written in Go for encrypting and decrypting files.
 
-NAME:
+~~~NAME:
    Aes Crypto CLI - Encrypt files with Advanced Encryption Standard (AES)
 
 USAGE:
@@ -24,3 +24,4 @@ GLOBAL OPTIONS:
    -o value       Path for output file
    --help, -h     show help
    --version, -v  print the version
+~~~
