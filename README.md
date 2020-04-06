@@ -6,7 +6,7 @@ NAME:
    Aes Crypto CLI - Encrypt files with Advanced Encryption Standard (AES)
 
 USAGE:
-   aesCryptoCLI.exe [global options] command [command options] [arguments...]
+   aesCryptoCLI [global options] command [command options] [arguments...]
 
 VERSION:
    1.0.0
