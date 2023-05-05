@@ -1,4 +1,5 @@
 # aesCryptoCLI
+
 A command line interface written in Go for encrypting and decrypting files.
 
 ~~~
@@ -26,3 +27,35 @@ GLOBAL OPTIONS:
    --help, -h     show help
    --version, -v  print the version
 ~~~
+
+## How to build & run
+
+```bash
+go mod init aes-crypto-cli
+go get github.com/urfave/cli
+
+# Build executable named 'aes-crypto-cli'
+go build -o aes-crypto-cli
+```
+
+## How to use
+
+```bash
+# Show help
+aes-crypto-cli --help
+```
+
+```bash
+# Create a key file named aes.key
+aes-crypto-cli createKey
+```
+
+```bash
+# Encrypt README.md file with aes.key and save it as README.encrypt
+aes-crypto-cli -i README.md -o README.encrypt -k aes.key run
+```
+
+```bash
+# Decrypt README.encrypt file with aes.key and save it as README.decrypt
+aes-crypto-cli -i README.md -o README.encrypt -k aes.key run
+```
